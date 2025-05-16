@@ -1,12 +1,10 @@
 # 📸 Image Analysis App with AWS Services
 
-I’m excited to share the source code for a project that demonstrates a modern, serverless architecture using several AWS services. Below is an overview of the app and instructions on how to run it.
+This application features a **React frontend** that interacts with a powerful backend pipeline built entirely with AWS services. Using Python in the Lambda function, the image is processed using Pillow library. A rectangle is drawn around detected objects based on bounding box coordinates, and the object’s name is overlaid on the image. If an object is detected but lacks bounding box data, it will not be drawn on the 
+image, though it will still be included in the metadata.
 
----
+## Demo
 
-## 🔧 Project Overview
-
-This application features a **React frontend** that interacts with a powerful backend pipeline built entirely with AWS services.
 
 ### 🧩 Architecture & Services Used
 
