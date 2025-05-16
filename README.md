@@ -28,7 +28,7 @@ image, though it will still be included in the metadata. Works for multiple obje
 
 - **Amazon SNS**:  
   Sends an email notification once the image analysis is complete, informing the user about the results.
-
+  ![Email from SNS](https://github.com/clauf14/aws-object-detection-and-photo-processing-app/raw/main/photos/Screenshot%202025-05-16%20110840.png)
 ---
 
 ## 🚀 How to Run the Project
