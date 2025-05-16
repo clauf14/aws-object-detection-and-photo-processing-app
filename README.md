@@ -35,21 +35,6 @@ This application features a **React frontend** that interacts with a powerful ba
 
 ## 🚀 How to Run the Project
 
-### ✅ Prerequisites
-
-- Node.js and npm installed
-- AWS CLI configured with your credentials
-- AWS account with permissions for:
-  - S3
-  - Lambda
-  - API Gateway
-  - DynamoDB
-  - Rekognition
-  - SNS
-- (Optional) AWS SAM or Serverless Framework for deployment
-
----
-
 ### 1. Clone the Repository into a folder
 
 ```bash
