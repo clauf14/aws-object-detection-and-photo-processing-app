@@ -4,7 +4,7 @@ This application features a **React frontend** that interacts with a powerful ba
 image, though it will still be included in the metadata.
 
 ## Demo
-
+![Demo GIF](https://github.com/clauf14/aws-object-detection-and-photo-processing-app/raw/main/2025-05-1610-54-32-ezgif.com-video-to-gif-converter.gif)
 
 ### 🧩 Architecture & Services Used
 
