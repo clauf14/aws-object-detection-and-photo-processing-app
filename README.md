@@ -1,70 +1,63 @@
-# Getting Started with Create React App
+# 📸 Image Analysis App with AWS Services
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+I’m excited to share the source code for a project that demonstrates a modern, serverless architecture using several AWS services. Below is an overview of the app and instructions on how to run it.
 
-## Available Scripts
+---
 
-In the project directory, you can run:
+## 🔧 Project Overview
 
-### `npm start`
+This application features a **React frontend** that interacts with a powerful backend pipeline built entirely with AWS services.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+### 🧩 Architecture & Services Used
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+- **Frontend**:  
+  Built with **React**, the UI allows users to upload images, which are then sent to the backend via a POST request.
 
-### `npm test`
+- **API Gateway**:  
+  Serves as the entry point to the backend, exposing an endpoint that triggers further processing.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+- **AWS Lambda**:  
+  The API Gateway invokes a Lambda function that orchestrates the entire workflow.
 
-### `npm run build`
+- **Amazon S3**:  
+  Stores the uploaded images reliably and securely.
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+- **Amazon DynamoDB**:  
+  Persists metadata related to each image for fast and scalable querying.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+- **Amazon Rekognition**:  
+  Analyzes the image to detect objects, scenes, and labels using machine learning.
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+- **Amazon SNS**:  
+  Sends an email notification once the image analysis is complete, informing the user about the results.
 
-### `npm run eject`
+---
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+## 🚀 How to Run the Project
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+### ✅ Prerequisites
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+- Node.js and npm installed
+- AWS CLI configured with your credentials
+- AWS account with permissions for:
+  - S3
+  - Lambda
+  - API Gateway
+  - DynamoDB
+  - Rekognition
+  - SNS
+- (Optional) AWS SAM or Serverless Framework for deployment
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+---
 
-## Learn More
+### 1. Clone the Repository into a folder
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+```bash
+git clone https://github.com/clauf14/aws-object-detection-and-photo-processing-app
+```
 
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+### 2. Open the folder with VS Code
+### 3. Type in terminal
+```bash
+npm start
+```
