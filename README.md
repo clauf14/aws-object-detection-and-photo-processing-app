@@ -1,7 +1,7 @@
 # 📸 Image Analysis App with AWS Services
 
 This application features a **React frontend** that interacts with a powerful backend pipeline built entirely with AWS services. Using Python in the Lambda function, the image is processed using Pillow library. A rectangle is drawn around detected objects based on bounding box coordinates, and the object’s name is overlaid on the image. If an object is detected but lacks bounding box data, it will not be drawn on the 
-image, though it will still be included in the metadata. Works for multiple objects too!
+image, though it will still be included in the metadata. Works for multiple objects too! Lambda code can be found in lambda_code.py.
 
 ## Demo
 ![Demo GIF](https://github.com/clauf14/aws-object-detection-and-photo-processing-app/raw/main/2025-05-1610-54-32-ezgif.com-video-to-gif-converter.gif)
